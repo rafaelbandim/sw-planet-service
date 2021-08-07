@@ -1,7 +1,7 @@
-package com.rafaelbandim.swapi.swplanetservice.controller;
+package com.rafaelbandim.swapi.planet.controller;
 
-import com.rafaelbandim.swapi.swplanetservice.entity.Planet;
-import com.rafaelbandim.swapi.swplanetservice.service.PlanetService;
+import com.rafaelbandim.swapi.entity.Planet;
+import com.rafaelbandim.swapi.service.PlanetService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

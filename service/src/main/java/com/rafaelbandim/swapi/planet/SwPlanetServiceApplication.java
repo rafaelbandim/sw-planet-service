@@ -1,4 +1,4 @@
-package com.rafaelbandim.swapi.swplanetservice;
+package com.rafaelbandim.swapi.planet;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

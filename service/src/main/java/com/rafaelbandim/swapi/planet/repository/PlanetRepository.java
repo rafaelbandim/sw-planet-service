@@ -1,6 +1,6 @@
-package com.rafaelbandim.swapi.swplanetservice.repository;
+package com.rafaelbandim.swapi.planet.repository;
 
-import com.rafaelbandim.swapi.swplanetservice.entity.Planet;
+import com.rafaelbandim.swapi.entity.Planet;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

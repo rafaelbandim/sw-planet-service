@@ -1,7 +1,7 @@
-package com.rafaelbandim.swapi.swplanetservice.service;
+package com.rafaelbandim.swapi.planet.service;
 
-import com.rafaelbandim.swapi.swplanetservice.entity.Planet;
-import com.rafaelbandim.swapi.swplanetservice.repository.PlanetRepository;
+import com.rafaelbandim.swapi.entity.Planet;
+import com.rafaelbandim.swapi.repository.PlanetRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -17,5 +17,12 @@ class PlanetServiceImpl implements PlanetService{
     @Override
     public List<Planet> getAll() {
         return planetRepository.findAll();
+    }
+
+    @Override
+    public Planet getById(Long id) {
+        Planet planet = planetRepository.getById(id);
+        System.out.println(planet.getId());
+        return planet;
     }
 }
