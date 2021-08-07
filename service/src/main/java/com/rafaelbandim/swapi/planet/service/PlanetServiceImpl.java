@@ -4,6 +4,7 @@ import com.rafaelbandim.swapi.planet.PlanetDTO;
 import com.rafaelbandim.swapi.planet.entity.Planet;
 import com.rafaelbandim.swapi.planet.repository.PlanetRepository;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -21,6 +22,7 @@ class PlanetServiceImpl implements PlanetService {
     }
 
     @Override
+    @Transactional(readOnly = true)
     public PlanetDTO getById(Long id) {
         Planet planet = planetRepository.getById(id);
         return new PlanetDTO(planet.getId(), planet.getName());

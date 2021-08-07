@@ -1,6 +1,8 @@
 package com.rafaelbandim.swapi.planet;
 
-public class PlanetDTO {
+import java.io.Serializable;
+
+public class PlanetDTO implements Serializable {
     private Long id;
     private String name;
 
