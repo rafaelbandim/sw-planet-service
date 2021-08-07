@@ -16,5 +16,6 @@
 	<packaging>pom</packaging>
 	<modules>
 		<module>service</module>
+		<module>api</module>
 	</modules>
 </project>

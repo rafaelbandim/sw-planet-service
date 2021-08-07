@@ -1,13 +1,14 @@
 package com.rafaelbandim.swapi.planet.service;
 
-import com.rafaelbandim.swapi.entity.Planet;
-import com.rafaelbandim.swapi.repository.PlanetRepository;
+import com.rafaelbandim.swapi.planet.PlanetDTO;
+import com.rafaelbandim.swapi.planet.entity.Planet;
+import com.rafaelbandim.swapi.planet.repository.PlanetRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-class PlanetServiceImpl implements PlanetService{
+class PlanetServiceImpl implements PlanetService {
     private PlanetRepository planetRepository;
 
     public PlanetServiceImpl(PlanetRepository planetRepository) {
@@ -20,9 +21,8 @@ class PlanetServiceImpl implements PlanetService{
     }
 
     @Override
-    public Planet getById(Long id) {
+    public PlanetDTO getById(Long id) {
         Planet planet = planetRepository.getById(id);
-        System.out.println(planet.getId());
-        return planet;
+        return new PlanetDTO(planet.getId(), planet.getName());
     }
 }

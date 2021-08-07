@@ -1,12 +1,12 @@
 package com.rafaelbandim.swapi.planet.service;
 
-import com.rafaelbandim.swapi.entity.Planet;
+import com.rafaelbandim.swapi.planet.PlanetServiceJMSApi;
+import com.rafaelbandim.swapi.planet.entity.Planet;
 
 import java.util.List;
 
-public interface PlanetService {
+public interface PlanetService extends PlanetServiceJMSApi {
 
     List<Planet> getAll();
 
-    Planet getById(Long id);
 }

@@ -1,6 +1,6 @@
 package com.rafaelbandim.swapi.planet.routes;
 
-import com.rafaelbandim.swapi.service.PlanetService;
+import com.rafaelbandim.swapi.planet.service.PlanetService;
 import org.apache.camel.ProducerTemplate;
 import org.apache.camel.builder.RouteBuilder;
 import org.springframework.stereotype.Component;
